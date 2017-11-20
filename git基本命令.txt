@@ -1,0 +1,11 @@
+分支之间合并，两个方案：
+1. 使用gitlab创建合并请求给自己，然后自己合并。
+2. 本地checkouout target分支，然后使用命令:  git merge --no-ff source-branch
+
+git fetch origin branch-cookietest:branch-cookietest 拉取远程分支并切换过去
+git checkout -b mywork origin 基于远程分支"origin"，创建一个叫"mywork"的分支。
+git checkout -b iss53   //新建分支并切换过去
+这相当于执行下面这两条命令：
+git branch iss53
+git checkout iss53
+git remote prune origin //清除远程分支缓存
