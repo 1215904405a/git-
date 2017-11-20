@@ -1,0 +1,27 @@
+1、clone
+git clone project.git project2
+cd project2
+git submodule init
+git submodule update
+2、cd project1/moduleA //修改
+git branch
+echo "This is a submodule." > b.txt
+git add .
+git commit -m "add b.txt"
+git push origin master
+cd ..
+git status
+git diff
+git add .
+git commit -m "update submodule add b.txt"
+git push origin master
+cd ..
+3、cd project2 //更新
+git pull
+git submodule update
+cd ..
+4、删除
+git rm --cached moduleA
+rm -rf moduleA
+rm .gitmodules
+vim .git/config
