@@ -1,3 +1,17 @@
+1、安装后：
+设置全局用户名和邮箱，方便命令行操作
+git config --global user.name "Your Name"
+git config --global user.email "email@example.com"
+
+2、创建版本库：
+mkdir learngit
+cd learngit
+git init //把这个目录变成Git可以管理的仓库
+vim readme.txt //新建文件
+git add readme.txt
+git commit -m "wrote a readme file"
+git push
+
 分支之间合并，两个方案：
 1. 使用gitlab创建合并请求给自己，然后自己合并。
 2. 本地checkouout target分支，然后使用命令:  git merge --no-ff source-branch
