@@ -8,6 +8,7 @@ mkdir learngit
 cd learngit
 git init //把这个目录变成Git可以管理的仓库
 vim readme.txt //新建文件
+git remote add origin https://github.com/cade8800/ionic-demo.git
 git add readme.txt
 git commit -m "wrote a readme file"
 git push
