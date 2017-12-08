@@ -26,3 +26,19 @@ git rm --cached moduleA
 rm -rf moduleA
 rm .gitmodules
 vim .git/config
+
+
+
+几个命令：
+添加子模块
+git submodule add GIT_REPO DIR
+
+移除子模块
+git rm the_submodule
+rm -rf .git/modules/the_submodule
+
+子模块还原(放弃子模块的最近提交)
+git submodule update
+
+递归更新子模块
+git submodule update --init --recursive
