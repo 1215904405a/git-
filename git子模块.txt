@@ -19,6 +19,7 @@ cd ..
 3、cd project2 //更新
 git pull
 git submodule update
+git submodule update --init --recursive //多个依赖
 cd ..
 4、删除
 git rm --cached moduleA
