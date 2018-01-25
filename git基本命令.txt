@@ -31,3 +31,5 @@ git branch -d XX
 merge
 git checkout master
 git merge --no-ff develop
+
+git add -f //恢复忽略的文件
